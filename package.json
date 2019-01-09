@@ -1,0 +1,65 @@
+{
+  "name": "cold-horizon-vscode",
+  "version": "0.4.1",
+  "author": {
+    "name": "Vincent Fiestada",
+    "email": "vincentfiestada@hotmail.com"
+  },
+  "displayName": "Cold Horizon Theme",
+  "description": "The temperature turned down on the Horizon theme for Visual Studio Code",
+  "publisher": "vincentfiestada",
+  "license": "MIT",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.26.0"
+  },
+  "scripts": {
+    "format": "prettier --write --use-tabs themes/*.json"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format"
+    }
+  },
+  "galleryBanner": {
+    "color": "#FFFFFF",
+    "theme": "light"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributors": [
+    "Jonathan Olaleye <j.olaleye.o@gmail.com>",
+    "Harold Gay",
+    "Matthew Fosdick"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "horizon",
+    "cold"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cold Horizon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cold.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vincentfiestada/cold-horizon"
+  },
+  "homepage": "https://github.com/vincentfiestada/cold-horizon",
+  "bugs": {
+    "url": "https://github.com/vincentfiestada/cold-horizon/issues"
+  },
+  "devDependencies": {
+    "husky": "1.3.1",
+    "prettier": "1.15.3",
+    "vsce": "^1.54.0"
+  },
+  "dependencies": {}
+}

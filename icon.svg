@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<svg width="480" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <defs>
+  <linearGradient id="svg_5" spreadMethod="reflect" x1="0.5" x2="0.5" y1="1" y2="0">
+   <stop offset="0" stop-color="#30AAD7"/>
+   <stop offset="0.48755" stop-color="#1FDAD9"/>
+   <stop offset="1" stop-color="#14D386"/>
+  </linearGradient>
+  <linearGradient id="svg_10" spreadMethod="reflect" x1="0.5" x2="0.5" y1="1" y2="0">
+   <stop offset="0" stop-color="#14D386"/>
+   <stop offset="0.24927" stop-color="#1FDAD9"/>
+   <stop offset="1" stop-color="#30AAD7"/>
+  </linearGradient>
+ </defs>
+ <g class="layer" display="inline">
+  <title>Layer 1</title>
+  <path d="m4.99996,4.05013a4.7,5.04146 0 0 0 470.00009,0" fill="url(#svg_5)" id="svg_1" transform="rotate(-180 240 130.087)"/>
+  <path d="m105.99993,115.05008a2.68,2.82146 0 0 0 268.00009,0" fill="#1c1e26" id="svg_6" opacity="0.8" transform="rotate(-180 240 185.587)"/>
+ </g>
+ <g class="layer">
+  <title>Layer 3</title>
+  <rect fill="url(#svg_10)" height="10" id="svg_58" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="468.000086" x="5.999969" y="263.5"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_59" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="134.000073" x="7.714263" y="282"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_60" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="323.000047" x="148.714262" y="282"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_61" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="213.000073" x="11.714263" y="300.5"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_62" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="83.000084" x="233.214264" y="300.5"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_63" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="143.000076" x="325.214237" y="300.5"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_64" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="95.000072" x="18.214263" y="319.5"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_65" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="154.000071" x="121.214267" y="319.5"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_66" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="178.000061" x="284.71425" y="319.5"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_67" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="273.00007" x="26.714251" y="340"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_68" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="146.000063" x="308.714258" y="339"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_69" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="114.000081" x="38.214248" y="361"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_70" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="72.000082" x="161.714248" y="361"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_71" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="94.000102" x="243.714248" y="361"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_72" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="94.000086" x="348.214259" y="361"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_73" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="219.000056" x="52.714267" y="380.857117"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_74" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="146.000066" x="281.214275" y="380.857117"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_75" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="121.000052" x="71.214269" y="401"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_76" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="106.000054" x="203.214268" y="401"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_77" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="89.000056" x="320.714273" y="401"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_78" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="169.000051" x="95.214268" y="421"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_79" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="110.000052" x="274.714263" y="421"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_81" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="47.000054" x="128.714271" y="440.5"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_80" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="165.000067" x="186.714263" y="440.5"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_82" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="91.000084" x="171.214248" y="457.357117"/>
+  <rect fill="url(#svg_10)" height="10" id="svg_83" opacity="0.8" rx="5" ry="5" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="0" width="40.000088" x="272.214257" y="457.357117"/>
+ </g>
+</svg>

@@ -1,0 +1,22 @@
+# Azure Pipelines Configuration
+# Build NodeJS Express app using Azure Pipelines
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript?view=vsts
+pool:
+  vmImage: "ubuntu-16.04"
+
+steps:
+  - task: NodeTool@0
+    displayName: Install Node
+    inputs:
+      versionSpec: "10.x"
+
+  - script: yarn install
+    displayName: Install Dependencies
+
+  - script: ./node_modules/vsce/out/vsce package
+    displayName: Package Extension
+  
+  - script: ./node_modules/vsce/out/vsce publish -p $ACCESS_TOKEN
+    displayName: Publish Extension
+    env:
+      ACCESS_TOKEN: $(access.token)
