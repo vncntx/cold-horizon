@@ -1,6 +1,6 @@
 {
   "name": "cold-horizon-vscode",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "author": {
     "name": "Vincent Fiestada",
     "email": "vincentfiestada@hotmail.com"
@@ -22,8 +22,8 @@
     }
   },
   "galleryBanner": {
-    "color": "#FFFFFF",
-    "theme": "light"
+    "color": "#1C1E26",
+    "theme": "dark"
   },
   "categories": [
     "Themes"
