@@ -139,9 +139,45 @@
 	"tokenColors": [
 		{
 			"name": "Text",
-			"scope": ["text", "meta", "punctuation", "source"],
+			"scope": ["text", "meta"],
 			"settings": {
-				"foreground": "#FFFFFF"
+				"foreground": "#FFFFFF",
+				"fontStyle": "normal"
+			}
+		},
+		{
+			"name": "Punctuation and standard source",
+			"scope": ["punctuation", "source", "meta.tag", "meta.brace"],
+			"settings": {
+				"foreground": "#21BFC2",
+				"fontStyle": "normal"
+			}
+		},
+		{
+			"name": "Variable",
+			"scope": ["variable", "entity.name.variable.local"],
+			"settings": {
+				"foreground": "#FFFFFF",
+				"fontStyle": "normal"
+			}
+		},
+		{
+			"name": "Operator",
+			"scope": ["keyword.operator"],
+			"settings": {
+				"foreground": "#56C2EA",
+				"fontStyle": "normal"
+			}
+		},
+		{
+			"name": "Special operator",
+			"scope": [
+				"keyword.operator.new",
+				"keyword.operator.expression",
+				"keyword.operator.logical"
+			],
+			"settings": {
+				"foreground": "#0AF29D"
 			}
 		},
 		{
@@ -164,17 +200,17 @@
 			}
 		},
 		{
-			"name": "Variable",
-			"scope": ["variable", "entity.name.variable.local"],
+			"name": "Go Import",
+			"scope": ["entity.name.import.go"],
 			"settings": {
-				"foreground": "#30AAD7"
+				"foreground": "#f9ca99"
 			}
 		},
 		{
 			"name": "Language variable",
 			"scope": "variable.language",
 			"settings": {
-				"foreground": "#1FDAD9",
+				"foreground": "#3CE8E6",
 				"fontStyle": "italic"
 			}
 		},
@@ -187,229 +223,119 @@
 		},
 		{
 			"name": "Storage Type (declaration keyword)",
-			"scope": ["storage.type"],
+			"scope": ["storage", "storage.type"],
 			"settings": {
-				"foreground": "#14D386",
-				"fontStyle": "italic"
+				"foreground": "#56C2EA",
+				"fontStyle": "normal"
 			}
 		},
 		{
 			"name": "Storage Modifier (e.g. public, private, etc.)",
 			"scope": ["storage.modifier"],
 			"settings": {
-				"foreground": "#13d2af",
 				"fontStyle": "italic"
-			}
-		},
-		{
-			"name": "Constant",
-			"scope": ["constant", "constant.language.import-export-all.js.jsx"],
-			"settings": {
-				"foreground": "#3ad3e8"
-			}
-		},
-		{
-			"name": "Regex",
-			"scope": "string.regexp",
-			"settings": {
-				"foreground": "#ffc187",
-				"fontStyle": "italic"
-			}
-		},
-		{
-			"name": "Number",
-			"scope": "constant.numeric",
-			"settings": {
-				"foreground": "#E06783"
-			}
-		},
-		{
-			"name": "Language constant (boolean, null)",
-			"scope": ["constant.language", "support.constant"],
-			"settings": {
-				"foreground": "#B877DB",
-				"fontStyle": "italic"
-			}
-		},
-		{
-			"name": "Character escape",
-			"scope": "constant.character.escape",
-			"settings": {
-				"foreground": "#40a5e8"
-			}
-		},
-		{
-			"name": "Entity (data interfaces)",
-			"scope": ["entity.name"],
-			"settings": {
-				"foreground": "#56C2EA"
-			}
-		},
-		{
-			"name": "Go Import",
-			"scope": ["entity.name.import.go"],
-			"settings": {
-				"foreground": "#f9ca99"
-			}
-		},
-		{
-			"name": "HTML or XML tag",
-			"scope": "entity.name.tag",
-			"settings": {
-				"foreground": "#14D386"
-			}
-		},
-		{
-			"name": "HTML or XML tag brackets",
-			"scope": ["punctuation.definition.tag"],
-			"settings": {
-				"foreground": "#21BFC2"
-			}
-		},
-		{
-			"name": "Tag atttribute",
-			"scope": "entity.other.attribute-name",
-			"settings": {
-				"foreground": "#30AAD7"
-			}
-		},
-		{
-			"name": "Field or Property",
-			"scope": [
-				"entity.name.variable.field",
-				"entity.name.variable.property",
-				"variable.other.object.property"
-			],
-			"settings": {
-				"foreground": "#25B0BC"
-			}
-		},
-		{
-			"name": "Class",
-			"scope": ["entity.name.type", "storage.type.cs"],
-			"settings": {
-				"foreground": "#56C2EA",
-				"fontStyle": "bold"
-			}
-		},
-		{
-			"name": "Struct, Namespace Block",
-			"scope": ["meta.class-struct-block", "meta.namespace-block"],
-			"settings": {
-				"foreground": "#25B0BC",
-				"fontStyle": "normal"
-			}
-		},
-		{
-			"name": "Namespace",
-			"scope": "entity.name.type.namespace",
-			"settings": {
-				"fontStyle": "normal"
-			}
-		},
-		{
-			"name": "Inherited class",
-			"scope": "entity.other.inherited-class",
-			"settings": {
-				"foreground": "#3CE8E6"
-			}
-		},
-		{
-			"name": "Function",
-			"scope": [
-				"entity.name.function",
-				"variable.function",
-				"meta.function-call"
-			],
-			"settings": {
-				"foreground": "#56C2EA"
 			}
 		},
 		{
 			"name": "Keyword",
 			"scope": "keyword",
 			"settings": {
-				"foreground": "#0AF29D",
-				"fontStyle": "italic"
-			}
-		},
-		{
-			"name": "Control keyword (if, try, while, etc.)",
-			"scope": "keyword.control",
-			"settings": {
+				"foreground": "#56C2EA",
 				"fontStyle": "normal"
 			}
 		},
 		{
-			"name": "Flow and Loop Keywords",
-			"scope": ["keyword.control.flow", "keyword.control.loop"],
+			"name": "Constant",
+			"scope": "constant",
+			"settings": {
+				"foreground": "#E06783",
+				"fontStyle": "normal"
+			}
+		},
+		{
+			"name": "Number",
+			"scope": ["constant.numeric"],
+			"settings": {
+				"foreground": "#E95478"
+			}
+		},
+		{
+			"name": "Language constant (boolean, null)",
+			"scope": ["constant.language", "support.constant"],
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Regex",
+			"scope": "string.regexp",
+			"settings": {
+				"foreground": "#FAB795"
+			}
+		},
+		{
+			"name": "Character escape",
+			"scope": "constant.character.escape",
 			"settings": {
 				"foreground": "#abd651"
 			}
 		},
 		{
-			"name": "Operator",
-			"scope": ["keyword.operator"],
+			"name": "Entity Name (functions, classes, namespace)",
+			"scope": ["entity"],
 			"settings": {
-				"foreground": "#FFFFFF",
+				"foreground": "#14D386",
 				"fontStyle": "normal"
 			}
 		},
 		{
-			"name": "Special operator",
+			"name": "Tag atttribute",
+			"scope": "entity.other.attribute-name",
+			"settings": {
+				"foreground": "#30AAD7",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Field, Property, Dictionary",
 			"scope": [
-				"keyword.operator.new",
-				"keyword.operator.expression",
-				"keyword.operator.logical"
+				"entity.name.variable.field",
+				"entity.name.variable.property",
+				"variable.other.object.property",
+				"variable.other.property",
+				"meta.object-literal.key",
+				"support.type.property-name",
+				"support.variable.property",
+				"meta.structure.dictionary",
+				"punctuation.support.type.property-name.begin",
+				"punctuation.support.type.property-name.end"
 			],
 			"settings": {
-				"foreground": "#0AF29D",
-				"fontStyle": "italic"
+				"foreground": "#30AAD7"
 			}
 		},
 		{
 			"name": "Support",
 			"scope": "support",
 			"settings": {
-				"foreground": "#56C2EA"
+				"foreground": "#1FDAD9",
+				"fontStyle": "normal"
 			}
 		},
 		{
-			"name": "Support function",
-			"scope": "support.function",
+			"name": "Support Constant",
+			"scope": "support.constant",
 			"settings": {
-				"foreground": "#21BFC2"
+				"fontStyle": "italic"
 			}
 		},
 		{
-			"name": "Support variable",
-			"scope": "support.variable",
+			"name": "Primitive Type",
+			"scope": "support.type",
 			"settings": {
-				"foreground": "#1FDAD9"
+				"foreground": "#14D386",
+				"fontStyle": "italic"
 			}
-		},
-		{
-			"name": "Object literal key / property",
-			"scope": [
-				"meta.object-literal.key",
-				"support.type.property-name",
-				"meta.structure.dictionary",
-				"punctuation.support.type.property-name.begin",
-				"punctuation.support.type.property-name.end"
-			],
-			"settings": {
-				"foreground": "#21BFC2"
-			}
-		},
-		{
-			"name": "Key-value separator",
-			"scope": "punctuation.separator.key-value",
-			"settings": {}
-		},
-		{
-			"name": "Embedded puncuation",
-			"scope": "punctuation.section.embedded",
-			"settings": {}
 		},
 		{
 			"name": "Template expression",
