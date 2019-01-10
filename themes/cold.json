@@ -248,7 +248,7 @@
 		},
 		{
 			"name": "Constant",
-			"scope": "constant",
+			"scope": ["constant", "constant.character punctuation"],
 			"settings": {
 				"foreground": "#F09483",
 				"fontStyle": "normal"
@@ -440,13 +440,17 @@
 				"punctuation.definition.heading"
 			],
 			"settings": {
-				"foreground": "#56C2EA",
+				"foreground": "#30AAD7",
 				"fontStyle": "bold"
 			}
 		},
 		{
 			"name": "Markup quote",
-			"scope": ["markup.quote", "punctuation.definition.quote.begin.markdown"],
+			"scope": [
+				"markup.quote",
+				"punctuation.definition.quote.begin.markdown",
+				"markup.quote meta.paragraph"
+			],
 			"settings": {
 				"foreground": "#f9ca99",
 				"fontStyle": "italic"
@@ -456,14 +460,14 @@
 			"name": "Markup list",
 			"scope": "punctuation.definition.list",
 			"settings": {
-				"foreground": "#1FDAD9"
+				"foreground": "#B877DB"
 			}
 		},
 		{
 			"name": "Markup link",
 			"scope": ["markup.underline.link", "meta.image.inline", "meta.link"],
 			"settings": {
-				"foreground": "#abd651",
+				"foreground": "#30AAD7",
 				"fontStyle": "italic"
 			}
 		},
@@ -476,7 +480,7 @@
 				"punctuation.definition.string.end.markdown"
 			],
 			"settings": {
-				"foreground": "#f9ca99",
+				"foreground": "#FFFFFF",
 				"fontStyle": "normal"
 			}
 		},
@@ -484,7 +488,7 @@
 			"name": "Markup Italic",
 			"scope": ["markup.italic", "punctuation.definition.italic.markdown"],
 			"settings": {
-				"foreground": "#f9ca99",
+				"foreground": "#3CE8E6",
 				"fontStyle": "italic"
 			}
 		},
@@ -492,7 +496,7 @@
 			"name": "Markup Bold",
 			"scope": ["markup.bold", "punctuation.definition.bold.markdown"],
 			"settings": {
-				"foreground": "#E06783",
+				"foreground": "#0AF29D",
 				"fontStyle": "bold"
 			}
 		},
