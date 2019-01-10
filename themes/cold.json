@@ -208,7 +208,7 @@
 		},
 		{
 			"name": "Language variable",
-			"scope": "variable.language",
+			"scope": ["variable.language", "keyword.other.this"],
 			"settings": {
 				"foreground": "#3CE8E6",
 				"fontStyle": "italic"
@@ -216,14 +216,20 @@
 		},
 		{
 			"name": "Parameter",
-			"scope": "variable.parameter",
+			"scope": ["variable.parameter", "entity.name.variable.parameter"],
 			"settings": {
+				"foreground": "#FFFFFF",
 				"fontStyle": "italic"
 			}
 		},
 		{
 			"name": "Storage Type (declaration keyword)",
-			"scope": ["storage", "storage.type"],
+			"scope": [
+				"storage",
+				"storage.type",
+				"keyword.other",
+				"keyword.operator.new"
+			],
 			"settings": {
 				"foreground": "#56C2EA",
 				"fontStyle": "normal"
@@ -240,7 +246,7 @@
 			"name": "Keyword",
 			"scope": "keyword",
 			"settings": {
-				"foreground": "#56C2EA",
+				"foreground": "#abd651",
 				"fontStyle": "normal"
 			}
 		},
@@ -282,7 +288,7 @@
 		},
 		{
 			"name": "Entity Name (functions, classes, namespace)",
-			"scope": ["entity"],
+			"scope": ["entity", "meta.import variable", "storage.type.cs"],
 			"settings": {
 				"foreground": "#14D386",
 				"fontStyle": "normal"
@@ -303,6 +309,8 @@
 				"entity.name.variable.property",
 				"variable.other.object.property",
 				"variable.other.property",
+				"variable.object.property",
+				"meta.definition.property",
 				"meta.object-literal.key",
 				"support.type.property-name",
 				"support.variable.property",
@@ -331,17 +339,18 @@
 		},
 		{
 			"name": "Primitive Type",
-			"scope": "support.type",
+			"scope": ["support.type", "keyword.type"],
 			"settings": {
-				"foreground": "#14D386",
+				"foreground": "#1FDAD9",
 				"fontStyle": "italic"
 			}
 		},
 		{
-			"name": "Template expression",
+			"name": "Template / Interpolation expression",
 			"scope": [
 				"punctuation.definition.template-expression.begin",
-				"punctuation.definition.template-expression.end"
+				"punctuation.definition.template-expression.end",
+				"punctuation.definition.interpolation"
 			],
 			"settings": {
 				"foreground": "#B877DB"
