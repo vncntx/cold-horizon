@@ -139,7 +139,7 @@
 	"tokenColors": [
 		{
 			"name": "Text",
-			"scope": ["text", "meta"],
+			"scope": ["text", "meta", "source.go"],
 			"settings": {
 				"foreground": "#FFFFFF",
 				"fontStyle": "normal"
@@ -218,6 +218,12 @@
 				"storage.type",
 				"keyword.other",
 				"keyword.operator.new",
+				"keyword.package",
+				"keyword.struct",
+				"keyword.type.go",
+				"keyword.var.go",
+				"keyword.function",
+				"keyword.interface",
 				"meta.using-namespace-declaration keyword.control"
 			],
 			"settings": {
@@ -276,7 +282,12 @@
 		},
 		{
 			"name": "Entity Name (functions, classes, namespace)",
-			"scope": ["entity", "storage.type.cs", "meta.import variable"],
+			"scope": [
+				"entity",
+				"storage.type.cs",
+				"meta.import variable",
+				"support.function.go"
+			],
 			"settings": {
 				"foreground": "#14D386",
 				"fontStyle": "normal"
@@ -313,7 +324,7 @@
 		},
 		{
 			"name": "Support",
-			"scope": "support",
+			"scope": ["support", "support.function.builtin"],
 			"settings": {
 				"foreground": "#1FDAD9",
 				"fontStyle": "normal"
@@ -329,7 +340,12 @@
 		},
 		{
 			"name": "Primitive Type",
-			"scope": ["support.type", "keyword.type", "storage.type.c"],
+			"scope": [
+				"support.type",
+				"keyword.type",
+				"storage.type.c",
+				"source.go storage.type"
+			],
 			"settings": {
 				"foreground": "#1FDAD9",
 				"fontStyle": "italic"
