@@ -170,17 +170,6 @@
 			}
 		},
 		{
-			"name": "Special operator",
-			"scope": [
-				"keyword.operator.new",
-				"keyword.operator.expression",
-				"keyword.operator.logical"
-			],
-			"settings": {
-				"foreground": "#0AF29D"
-			}
-		},
-		{
 			"name": "Comment",
 			"scope": ["comment", "punctuation.definition.comment"],
 			"settings": {
@@ -228,7 +217,8 @@
 				"storage",
 				"storage.type",
 				"keyword.other",
-				"keyword.operator.new"
+				"keyword.operator.new",
+				"meta.using-namespace-declaration keyword.control"
 			],
 			"settings": {
 				"foreground": "#56C2EA",
@@ -254,16 +244,14 @@
 			"name": "Constant",
 			"scope": "constant",
 			"settings": {
-				"foreground": "#E06783",
+				"foreground": "#F09483",
 				"fontStyle": "normal"
 			}
 		},
 		{
 			"name": "Number",
 			"scope": ["constant.numeric"],
-			"settings": {
-				"foreground": "#E95478"
-			}
+			"settings": {}
 		},
 		{
 			"name": "Language constant (boolean, null)",
@@ -283,12 +271,12 @@
 			"name": "Character escape",
 			"scope": "constant.character.escape",
 			"settings": {
-				"foreground": "#abd651"
+				"foreground": "#E06783"
 			}
 		},
 		{
 			"name": "Entity Name (functions, classes, namespace)",
-			"scope": ["entity", "meta.import variable", "storage.type.cs"],
+			"scope": ["entity", "storage.type.cs", "meta.import variable"],
 			"settings": {
 				"foreground": "#14D386",
 				"fontStyle": "normal"
@@ -316,7 +304,8 @@
 				"support.variable.property",
 				"meta.structure.dictionary",
 				"punctuation.support.type.property-name.begin",
-				"punctuation.support.type.property-name.end"
+				"punctuation.support.type.property-name.end",
+				"variable.other.member"
 			],
 			"settings": {
 				"foreground": "#30AAD7"
@@ -332,25 +321,27 @@
 		},
 		{
 			"name": "Support Constant",
-			"scope": "support.constant",
-			"settings": {
-				"fontStyle": "italic"
-			}
-		},
-		{
-			"name": "Primitive Type",
-			"scope": ["support.type", "keyword.type"],
+			"scope": ["support.constant", "meta.preprocessor.macro entity.name"],
 			"settings": {
 				"foreground": "#1FDAD9",
 				"fontStyle": "italic"
 			}
 		},
 		{
-			"name": "Template / Interpolation expression",
+			"name": "Primitive Type",
+			"scope": ["support.type", "keyword.type", "storage.type.c"],
+			"settings": {
+				"foreground": "#1FDAD9",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Template / Interpolation expression and Placeholders",
 			"scope": [
 				"punctuation.definition.template-expression.begin",
 				"punctuation.definition.template-expression.end",
-				"punctuation.definition.interpolation"
+				"punctuation.definition.interpolation",
+				"constant.other.placeholder"
 			],
 			"settings": {
 				"foreground": "#B877DB"
@@ -502,26 +493,14 @@
 		{
 			"name": "C or C++ Directive, Preprocessor",
 			"scope": [
-				"punctuation.definition.directive.c",
+				"punctuation.definition.directive",
 				"meta.preprocessor",
+				"entity.other.attribute-name.pragma",
 				"keyword.control.directive"
 			],
 			"settings": {
-				"foreground": "#3CE8E6"
-			}
-		},
-		{
-			"name": "C++ Operators",
-			"scope": [
-				"punctuation.separator.namespace.access.cpp",
-				"keyword.operator.bitwise.shift.c",
-				"keyword.operator.assignment.c",
-				"keyword.operator.c",
-				"keyword.operator.comparison.c",
-				"keyword.operator.logical.c"
-			],
-			"settings": {
-				"foreground": "#1FDAD9"
+				"foreground": "#abd651",
+				"fontStyle": "normal"
 			}
 		}
 	]
