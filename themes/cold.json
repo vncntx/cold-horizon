@@ -58,6 +58,7 @@
 		"editorLineNumber.activeForeground": "#FFFFFF",
 		"editorCursor.background": "#1C1E26",
 		"editorCursor.foreground": "#56C2EA",
+		"editor.foreground": "#FFFFFF",
 		"editor.selectionBackground": "#2E303EB3",
 		"editor.selectionHighlightBackground": "#6C6F9359",
 		"editor.wordHighlightBackground": "#6C6F9373",
@@ -154,8 +155,12 @@
 			}
 		},
 		{
-			"name": "Variable",
-			"scope": ["variable", "entity.name.variable.local"],
+			"name": "Variable or alias",
+			"scope": [
+				"variable",
+				"entity.name.variable.local",
+				"entity.name.type.anchor.yaml"
+			],
 			"settings": {
 				"foreground": "#FFFFFF",
 				"fontStyle": "normal"
@@ -182,7 +187,9 @@
 			"scope": [
 				"string.quoted",
 				"string.template",
-				"punctuation.definition.string"
+				"punctuation.definition.string",
+				"meta.attribute-selector",
+				"string.unquoted.plain.out"
 			],
 			"settings": {
 				"foreground": "#f9ca99"
@@ -242,13 +249,17 @@
 			"name": "Keyword",
 			"scope": "keyword",
 			"settings": {
-				"foreground": "#abd651",
+				"foreground": "#56C2EA",
 				"fontStyle": "normal"
 			}
 		},
 		{
 			"name": "Constant",
-			"scope": ["constant", "constant.character punctuation"],
+			"scope": [
+				"constant",
+				"constant.character punctuation",
+				"punctuation.definition.constant"
+			],
 			"settings": {
 				"foreground": "#F09483",
 				"fontStyle": "normal"
@@ -286,7 +297,8 @@
 				"entity",
 				"storage.type.cs",
 				"meta.import variable",
-				"support.function.go"
+				"support.function.go",
+				"support.class.component"
 			],
 			"settings": {
 				"foreground": "#14D386",
@@ -314,12 +326,13 @@
 				"support.type.property-name",
 				"support.variable.property",
 				"meta.structure.dictionary",
-				"punctuation.support.type.property-name.begin",
-				"punctuation.support.type.property-name.end",
-				"variable.other.member"
+				"punctuation.support.type.property-name",
+				"variable.other.member",
+				"entity.name.tag.yaml"
 			],
 			"settings": {
-				"foreground": "#30AAD7"
+				"foreground": "#30AAD7",
+				"fontStyle": "normal"
 			}
 		},
 		{
@@ -344,7 +357,8 @@
 				"support.type",
 				"keyword.type",
 				"storage.type.c",
-				"source.go storage.type"
+				"source.go storage.type",
+				"storage.type.tag-handle.yaml"
 			],
 			"settings": {
 				"foreground": "#1FDAD9",
@@ -366,35 +380,33 @@
 		{
 			"name": "CSS Selector",
 			"scope": [
-				"meta.selector.css",
 				"punctuation.definition.entity.css",
 				"entity.other.attribute-name.id.css",
-				"entity.other.attribute-name.class.css"
+				"entity.other.attribute-name.class.css",
+				"entity.other.attribute-name.placeholder.css"
 			],
 			"settings": {
 				"foreground": "#56C2EA",
-				"fontStyle": "bold"
+				"fontStyle": "normal"
 			}
 		},
 		{
 			"name": "CSS property",
-			"scope": "support.type.property-name.css",
+			"scope": [
+				"support.type.property-name.css",
+				"meta.property-list entity.name",
+				"support.type.vendored.property-name.css"
+			],
 			"settings": {
-				"foreground": "#25B0BC"
-			}
-		},
-		{
-			"name": "Color",
-			"scope": "constant.other.color",
-			"settings": {
-				"foreground": "#FFFFFF"
+				"foreground": "#30AAD7",
+				"fontStyle": "normal"
 			}
 		},
 		{
 			"name": "Unit",
 			"scope": "keyword.other.unit",
 			"settings": {
-				"foreground": "#E06783"
+				"foreground": "#F09483"
 			}
 		},
 		{
@@ -408,11 +420,13 @@
 		{
 			"name": "Pseudo CSS",
 			"scope": [
+				"meta.selector.css",
 				"entity.other.attribute-name.pseudo-element",
 				"entity.other.attribute-name.pseudo-class"
 			],
 			"settings": {
-				"foreground": "#abd651"
+				"foreground": "#0AF29D",
+				"fontStyle": "normal"
 			}
 		},
 		{
@@ -429,7 +443,7 @@
 				"keyword.control.at-rule"
 			],
 			"settings": {
-				"foreground": "#0AF29D"
+				"foreground": "#56C2EA"
 			}
 		},
 		{
@@ -437,10 +451,11 @@
 			"scope": [
 				"markup.heading",
 				"entity.name.section",
-				"punctuation.definition.heading"
+				"punctuation.definition.heading",
+				"source.yaml entity.other.document"
 			],
 			"settings": {
-				"foreground": "#30AAD7",
+				"foreground": "#56C2EA",
 				"fontStyle": "bold"
 			}
 		},
@@ -519,7 +534,7 @@
 				"keyword.control.directive"
 			],
 			"settings": {
-				"foreground": "#abd651",
+				"foreground": "#56C2EA",
 				"fontStyle": "normal"
 			}
 		}
