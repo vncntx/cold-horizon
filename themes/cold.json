@@ -560,6 +560,14 @@
 				"foreground": "#09F7A0",
 				"fontStyle": "italic"
 			}
+		},
+		{
+			"name": "Invalid",
+			"scope": "invalid",
+			"settings": {
+				"foreground": "#F43E5C",
+				"fontStyle": "normal"
+			}
 		}
 	]
 }
