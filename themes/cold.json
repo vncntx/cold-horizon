@@ -189,7 +189,8 @@
 				"string.template",
 				"punctuation.definition.string",
 				"meta.attribute-selector",
-				"string.unquoted.plain.out"
+				"string.unquoted.plain.out",
+				"string.quoted source.css"
 			],
 			"settings": {
 				"foreground": "#f9ca99"
