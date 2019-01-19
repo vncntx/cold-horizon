@@ -236,7 +236,8 @@
 				"keyword.var.go",
 				"keyword.function",
 				"keyword.interface",
-				"meta.using-namespace-declaration keyword.control"
+				"meta.using-namespace-declaration keyword.control",
+				"punctuation.definition.block.tag.jsdoc"
 			],
 			"settings": {
 				"foreground": "#56C2EA",
