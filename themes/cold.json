@@ -176,7 +176,12 @@
 		},
 		{
 			"name": "Comment",
-			"scope": ["comment", "punctuation.definition.comment"],
+			"scope": [
+				"comment",
+				"punctuation.definition.comment",
+				"string.quoted.docstring",
+				"string.quoted.docstring punctuation.definition.string"
+			],
 			"settings": {
 				"foreground": "#959595",
 				"fontStyle": "italic"
@@ -236,7 +241,8 @@
 				"keyword.var.go",
 				"keyword.function",
 				"keyword.interface",
-				"meta.using-namespace-declaration keyword.control"
+				"meta.using-namespace-declaration keyword.control",
+				"storage.type punctuation.definition"
 			],
 			"settings": {
 				"foreground": "#56C2EA",
