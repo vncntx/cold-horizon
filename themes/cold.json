@@ -283,7 +283,11 @@
 		},
 		{
 			"name": "Language constant (boolean, null)",
-			"scope": ["constant.language", "support.constant"],
+			"scope": [
+				"constant.language",
+				"support.constant",
+				"support.constant punctuation"
+			],
 			"settings": {
 				"fontStyle": "italic"
 			}
