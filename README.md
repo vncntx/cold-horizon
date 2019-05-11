@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./icon.png" />
+<img src="https://raw.githubusercontent.com/vincentfiestada/cold-horizon/master/icon.png" />
 <h1>Cold Horizon</h1>
 <p>❄️ A <a href="https://code.visualstudio.com/">Visual Studio Code</a> Theme ❄️</p>
 </div>
