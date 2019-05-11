@@ -4,6 +4,9 @@
 pool:
   vmImage: "ubuntu-16.04"
 
+trigger:
+  - master
+
 steps:
   - task: NodeTool@0
     displayName: Install Node
