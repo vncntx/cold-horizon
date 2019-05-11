@@ -140,15 +140,15 @@
 	"tokenColors": [
 		{
 			"name": "Text",
-			"scope": ["text", "meta", "source.go", "source.python"],
+			"scope": ["text", "source"],
 			"settings": {
 				"foreground": "#FFFFFF",
 				"fontStyle": "normal"
 			}
 		},
 		{
-			"name": "Punctuation and standard source",
-			"scope": ["punctuation", "source", "meta.tag", "meta.brace"],
+			"name": "Punctuation",
+			"scope": ["punctuation"],
 			"settings": {
 				"foreground": "#21BFC2",
 				"fontStyle": "normal"
@@ -193,7 +193,6 @@
 				"string.quoted",
 				"string.template",
 				"punctuation.definition.string",
-				"meta.attribute-selector",
 				"string.unquoted.plain.out",
 				"string.quoted source.css"
 			],
@@ -241,7 +240,6 @@
 				"keyword.var.go",
 				"keyword.function",
 				"keyword.interface",
-				"meta.using-namespace-declaration keyword.control",
 				"storage.type punctuation.definition"
 			],
 			"settings": {
@@ -311,11 +309,8 @@
 			"scope": [
 				"entity",
 				"storage.type.cs",
-				"meta.import variable",
 				"support.function.go",
 				"support.class.component",
-				"meta.function.parameters.python",
-				"meta.function-call.generic",
 				"support.function.magic"
 			],
 			"settings": {
@@ -339,11 +334,8 @@
 				"variable.other.object.property",
 				"variable.other.property",
 				"variable.object.property",
-				"meta.definition.property",
-				"meta.object-literal.key",
 				"support.type.property-name",
 				"support.variable.property",
-				"meta.structure.dictionary",
 				"punctuation.support.type.property-name",
 				"variable.other.member",
 				"entity.name.tag.yaml"
@@ -363,7 +355,7 @@
 		},
 		{
 			"name": "Support Constant",
-			"scope": ["support.constant", "meta.preprocessor.macro entity.name"],
+			"scope": ["support.constant"],
 			"settings": {
 				"foreground": "#1FDAD9",
 				"fontStyle": "italic"
@@ -389,8 +381,7 @@
 				"punctuation.definition.template-expression.begin",
 				"punctuation.definition.template-expression.end",
 				"punctuation.definition.interpolation",
-				"constant.other.placeholder",
-				"meta.fstring.python constant.character.format.placeholder"
+				"constant.other.placeholder"
 			],
 			"settings": {
 				"foreground": "#B877DB"
@@ -413,7 +404,6 @@
 			"name": "CSS property",
 			"scope": [
 				"support.type.property-name.css",
-				"meta.property-list entity.name",
 				"support.type.vendored.property-name.css"
 			],
 			"settings": {
@@ -439,7 +429,6 @@
 		{
 			"name": "CSS Pseudo Selector",
 			"scope": [
-				"meta.selector.css",
 				"entity.other.attribute-name.pseudo-element",
 				"entity.other.attribute-name.pseudo-class",
 				"entity.other.attribute-name.pseudo-class punctuation.definition.entity.css"
@@ -501,7 +490,7 @@
 		},
 		{
 			"name": "Markup link",
-			"scope": ["markup.underline.link", "meta.image.inline", "meta.link"],
+			"scope": ["markup.underline.link"],
 			"settings": {
 				"foreground": "#30AAD7",
 				"fontStyle": "italic"
@@ -552,7 +541,6 @@
 			"name": "C or C++ Directive, Preprocessor",
 			"scope": [
 				"punctuation.definition.directive",
-				"meta.preprocessor",
 				"entity.other.attribute-name.pragma",
 				"keyword.control.directive"
 			],
@@ -570,14 +558,6 @@
 			"settings": {
 				"foreground": "#09F7A0",
 				"fontStyle": "italic"
-			}
-		},
-		{
-			"name": "Invalid",
-			"scope": "invalid",
-			"settings": {
-				"foreground": "#F43E5C",
-				"fontStyle": "normal"
 			}
 		}
 	]
