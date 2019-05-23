@@ -1,3 +1,8 @@
+## 1.2.1 (2019-05-24)
+
+* chore: Add a better screenshot taht shows the UI theme ([daa0608](https://github.com/vincentfiestada/cold-horizon/commit/daa0608))
+* chore: add launch config to repo ([3f0332f](https://github.com/vincentfiestada/cold-horizon/commit/3f0332f))
+
 ## 1.2.0 (2019-05-24)
 
 * style: better contrast for sidebar and highlighted items ([15d76fa](https://github.com/vincentfiestada/cold-horizon/commit/15d76fa))
