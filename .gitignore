@@ -4,3 +4,4 @@ node_modules
 .idea
 *.log
 .DS_Store
+!.vscode/launch.json
