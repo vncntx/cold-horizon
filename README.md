@@ -15,7 +15,7 @@
 Inspired by the wonderful [Horizon Theme](https://github.com/jolaleye/horizon-theme-vscode) for VS Code, Cold Horizon turns the temperature down with an identical color palette, but dominated by shades of blue and green.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/vincentfiestada/cold-horizon/master/docs/screenshot.png" />
+  <img src="https://raw.githubusercontent.com/vincentfiestada/cold-horizon/master/docs/screenshot_contrast.png" />
 </div>
 
 ## Installation
