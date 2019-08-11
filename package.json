@@ -1,6 +1,6 @@
 {
   "name": "cold-horizon-vscode",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "author": {
     "name": "Vincent Fiestada",
     "email": "vincentfiestada@hotmail.com"
@@ -14,7 +14,7 @@
     "vscode": "^1.26.0"
   },
   "scripts": {
-    "format": "node node_modules/prettier/bin-prettier.js --write --use-tabs themes/*.json"
+    "format": "prettier --write --use-tabs themes/*.json"
   },
   "husky": {
     "hooks": {
