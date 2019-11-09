@@ -45,6 +45,11 @@
         "label": "Cold Horizon",
         "uiTheme": "vs-dark",
         "path": "./themes/cold.json"
+			},
+			{
+        "label": "Cold Horizon, No Italics",
+        "uiTheme": "vs-dark",
+        "path": "./themes/normal.json"
       }
     ]
   },
